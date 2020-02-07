@@ -11,7 +11,7 @@ int main(){
         }
         else if (income <= 100000 && income > 50000 ){
            amount = (.07 - senior);
-            tax = income * amount; 
+            tax = income * amount;
             printf("The tax amount is: $%.2f\nThe tax rate is: %.2f\nThe senior discount rate is: %.2f\n", tax, amount, senior);
         }
         else{
@@ -33,5 +33,3 @@ int main(){
             printf("The tax amount is: $%.2f\nThe tax rate is: %.2f\nThere is no senior discount", tax, amount);
         }
 }
-            
-
