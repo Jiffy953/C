@@ -12,10 +12,12 @@ int main()
 double f(double x)
 {
   int i = 1;
+  float temp = 0;
   while(i <= 20)
   {
-    printf("%f\n", pow(-1,i + 1) * (pow(x, i)/i));
+    temp += pow(-1,i + 1) * (pow(x, i)/i);
     ++i;
   }
+  printf("%f", temp);
   return 0;
 }
