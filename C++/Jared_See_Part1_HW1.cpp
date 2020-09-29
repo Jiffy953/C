@@ -1,3 +1,7 @@
+//Jared See
+//Last run at: 9/26/20 2:39pm
+
+
 #include<iostream>
 using namespace std;
 
@@ -9,7 +13,7 @@ int main()
     cout << "Enter two values: ";
     cin >> x;
     cin >> y;
-    cout << gcd(x,y);
+    cout << "GCD is: "<< gcd(x,y) << endl;
 }
 
 int gcd(int x, int y)
@@ -30,5 +34,6 @@ int gcd(int x, int y)
     {
         gcd(x, y - x);
     }
-    
+    else
+        gcd(x - y, y);
 }
